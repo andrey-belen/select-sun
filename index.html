@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select-sun</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="select_sun_favicon.ico">
+    <script src="https://kit.fontawesome.com/7982669c64.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+<header id="header"> 
+    <img src="images/logo2.png" id="logo" width="170">
+
+    <nav class="navbar" id="navbar">
+        <ul>
+            <li><a href="#О-нас">О нас</a></li>
+            <li><a href="#Направления">Направления</a></li>
+            <li><a href="#Отзывы">Отзывы</a></li>
+            <li><a href="#Связаться-с-нами">Связаться с нами</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div id="background">
+    <div id="transparent-box">
+        <img src="images/logot.png" width="300px">
+        <p>Для тех, кто ценит качественный отдых.</p>
+    </div>
+</div>
+<div id="blue-line"></div>
+<main>
+
+    <section id="О-нас">
+        <h2>О нас</h2>
+    <p>Мы - онлайн-турагенство, которое специализируется на предоставлении лучших туристических услуг для наших клиентов. Наши эксперты всегда готовы помочь вам выбрать идеальное направление для отдыха, забронировать лучшие отели и предложить эксклюзивные предложения. Путешествуйте с нами и откройте для себя новые горизонты!</p>
+    <div class="team-container">
+        <div class="team-member">
+            <img src="team-member1.jpg" alt="Team Member 1">
+            <h3>Анастасия Иванова</h3>
+            <p>Генеральный директор</p>
+        </div>
+        <div class="team-member">
+            <img src="team-member2.jpg" alt="Team Member 2">
+            <h3>Максим Петров</h3>
+            <p>Менеджер по продажам</p>
+        </div>
+        <div class="team-member">
+            <img src="team-member3.jpg" alt="Team Member 3">
+            <h3>Ольга Сидорова</h3>
+            <p>Туристический агент</p>
+        </div>
+    </div>
+</section>
+    </section>
+
+    <section id="Направления">
+        <h2>Направления</h2>
+        <div class="carousel">
+            <button class="prev" onclick="prevSlide()">&#10094;</button>
+            <div class="carousel-inner">
+
+                <div class="carousel-item">
+                    <div class="image-box">
+                        <img src="images/maldives.jpg" alt="Image 1">
+                        <p class="description">Description 1</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="image-box">
+                        <img src="images/egypt.png" alt="Image 2">
+                        <p class="description">Description 2</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="image-box">
+                        <img src="images/cuba.png" alt="Image 3">
+                        <p class="description">Description 3</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="image-box">
+                        <img src="images/turkey.jpg" alt="Image 3">
+                        <p class="description">Description 3</p>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="image-box">
+                        <img src="images/turkey.jpg" alt="Image 3">
+                        <p class="description">Description 3</p>
+                    </div>
+                </div>
+                <!-- Add more carousel items as needed -->
+            </div>
+            <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+        <script src="script.js"></script>
+  <!-- Right Button -->
+      <button id="next-btn" class="next-btn"> </button>
+    </section>
+
+    <section id="Отзывы">
+        <h2 style="color: white;">Отзывы наших клиентов</h2>
+        
+        <div class="reviews-container">
+            <div class="review">
+                <p class="review-text">Спасибо вам большое! Вы чудесны, даже бронирование тура подарило позитивные эмоции.</p>
+            </div>
+            <div class="review">
+                <p class="review-text">Отель шикарный, мы в восторге, жалею что раньше здесь не была. Спасибо! Это - любовь с первого взгляда.</p>
+            </div>
+            <div class="review">
+                <p class="review-text">Хотим от всего сердца выразить Вам огромную благодарность за активное участие в решении вопросов и помощи. Вы - супер отзывчивый добрейший человек и большой профессионал своего дела!</p>
+            </div>
+            <div class="review">
+                <p class="review-text">Анастасия, это божественный отель!
+                    Спасибо Вам огромное в помощи!
+                    Мы с Вами на века.</p>  
+            </div>
+            <div class="review">
+                <p class="review-text">Анастасия, здравствуйте, я пишу Вам с большой благодарностью! Первый отдых с детьми-это было волнительно, и самим бронировать тур было страшно и как же я рада, что встретила вас!</p>
+                
+            </div>
+            <div class="review">
+                <p class="review-text">Огромное спасибо Вам за наш отдых! За поддержку и помощь с любым вопросом. Теперь я знаю, с кем буду летать в отпуск!</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="Связаться-с-нами">
+        <h2 style="padding: 20px;">Связаться с нами</h2>
+        
+    
+        <div class="form-container">
+            <form id="contact-form">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+            
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+    
+                <button type="submit">Submit</button>
+            </form>
+            <div class="box" id="contact-box">
+                <div id="profile-pic-container">
+
+                    <img src="images/select_sun_pic.png" id="profile-pic">
+                
+                <div id="contact-info">
+                
+                    <h1>Анастасия Беленькая</h1>
+                    <p>Автор Онлайн-турагентства</p>
+                    <div id="social-links">
+                        <div>
+                            <i class="fa-brands fa-instagram fa-2x"></i>
+                            <a href="https://www.instagram.com/select.sun/" target="_blank">Инстаграм</a>
+    
+                            <i class="fa-brands fa-telegram fa-2x" style="margin-left: 10px;"></i>
+                            <a href="https://t.me/selectsuntravel" target="_blank">Телеграм</a>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-envelope fa-2x"></i>
+                            <a href="mailto:select.sun@mail.ru" target="_blank">e-mail</a>
+                        
+                            <i class="fa-brands fa-whatsapp fa-2x" style="margin-left: 40px;"></i>
+                            <a href="https://wa.link/jf3k3f" target="_blank">Whatsapp</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div id="paragraph-contact">
+                    <p>Приветствую!</p>
+                    <br>
+                    <p>
+                    Меня зовут Анастасия, я автор бюро путешествий SELECT.SUN.
+                    Я и моя команда персональных турагентов организуем вам отдых мечты. Отели/авиабилеты/трансферы по всему миру.
+                    </p> <br>
+                    <p>C нами остаются навеки, попробуйте и Вы</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<script src="script.js"></script>
+</body>
+
+<footer id="footer">
+
+</footer>
+</html>

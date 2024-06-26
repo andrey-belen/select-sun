@@ -1,0 +1,428 @@
+/* CSS reset for margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    font-family: 'Karla', sans-serif;
+}
+
+#header {
+    width: 100%;
+    height: 130px;
+    background-color: rgb(50, 116, 139);
+    color: white;
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+    font-size: 1.5em;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    margin-left: 10px;
+}
+
+#footer {
+    width: 100%;
+    height: 130px;
+    background-color: rgb(50, 116, 139);
+    color: white;
+    text-align: center;
+    font-family: 'Karla', sans-serif;
+    font-size: 1.5em;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#background {
+    top: 160px;
+    width: 100%;
+    height: calc(100% - 130px);
+    background-image: url('images/beach-1867436.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+}
+#О-нас {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#О-нас h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#О-нас p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2em;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-member h3 {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.team-member p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1em;
+    color: #777;
+    margin: 0;
+}
+#transparent-box {
+    font-family: 'Karla', sans-serif;
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 5;
+    color: black;
+}
+
+#navbar {
+    width: 100%;
+    margin: 0;
+    border-radius: 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    background-color: rgb(50, 116, 139);
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar li {
+    flex: 1;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    border-radius: 300px;
+    display: block;
+}
+
+.navbar a:hover {
+    background-color: rgb(106, 202, 215);
+}
+
+section {
+    padding-top: 0px;
+    padding-left: 50px;
+    margin: 50px 0;
+}
+
+#blue-line {
+    width: 100%;
+    height: 30px;
+    background-color: rgb(50, 116, 139);
+    position: relative;
+    z-index: 1;
+}
+
+.carousel {
+    position: relative;
+    width: 90%;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform 0.8s ease;
+}
+
+.carousel-item {
+    min-width: 33.33%;
+    box-sizing: border-box;
+}
+
+.image-box {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+.image-box img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.description {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+#Отзывы {
+    padding: 20px;
+    background-color: rgb(50, 116, 139);
+}
+
+#Отзывы h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+.reviews-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 0 20px;
+    color: #888;
+}
+
+.review {
+    border: 5px solid rgb(187, 160, 134);
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    color: #555;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.review:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.review::before {
+    content: "“";
+    font-size: 50px;
+    color: #ccc;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.review-text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    padding-left: 30px;  /* to give space for the quotation mark */
+}
+
+
+
+#contact-form {
+    max-width: 700px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#contact-form input,
+#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#contact-form button {
+    background-color: rgb(50, 116, 139);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: rgb(106, 202, 215);
+}
+
+.form-container {
+    display: flex;
+    font-family: 'Karla', sans-serif;
+}
+
+#contact-box {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+    margin-top: 10px;
+    border: 5px solid rgb(187, 160, 134);
+    border-radius: 30px;
+}
+
+#profile-pic-container {
+    display: flex;
+    justify-content: flex-start; /* Align content to the left */
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+#profile-pic {
+    max-width: 100%;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin-right: 60px; /* Adjust the right margin as needed */
+    margin-left: 40px;
+}
+
+#contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: left; /* Center items horizontally */
+}
+
+#contact-info h1 {
+    margin: 10px;
+    text-align: left;
+}
+
+#contact-info p {
+    
+    text-align: left;
+}
+
+#paragraph-contact{
+    font-size: large;
+    text-align: left;
+    padding-left: 20px;
+}
+
+#social-links {
+    display: flex;
+    flex-direction: column; /* Stack social links vertically */
+    align-items: left;
+    
+}
+
+#social-links div {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+#social-links i {
+    margin-right: 10px;
+}
+
+#social-links a {
+    display: flex;
+    text-decoration: none;
+    color: inherit;
+}
+
+#paragraph {
+    text-align: center;
+}

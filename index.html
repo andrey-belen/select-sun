@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO Meta Tags -->
+    <title>Select-Sun | Организация туров в Азию и Ближний Восток</title>
+    <meta name="description" content="Организуем незабываемые путешествия в Таиланд, Турцию и ОАЭ. Индивидуальный подход и профессиональное сопровождение.">
+    <meta name="keywords" content="Select-Sun, туры, путешествия, Таиланд, Турция, ОАЭ, отдых">
+    
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="Select-Sun | Туры в Азию">
+    <meta property="og:description" content="Организуем незабываемые путешествия в Таиланд, Турцию и ОАЭ">
+    <meta property="og:image" content="https://your-domain.com/images/og-image.jpg">
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <script src="https://kit.fontawesome.com/7982669c64.js" crossorigin="anonymous"></script>
+    <link rel="preload" href="images/logo2.png" as="image">
+    <link rel="preload" href="images/beach-1867436.jpg" as="image">
+</head>
+<body>
+    <header id="header">
+
+       
+
+        <img src="images/logo2.png" id="logo" alt="Logo">
+        <!-- Desktop Navbar -->
+       
+          
+        <nav class="navbar" id="navbar">
+            <ul>
+             <li><a href="#О-нас" data-translate="about_us">О нас</a></li>
+             <li><a href="#Направления" data-translate="directions">Направления</a></li>
+             <li><a href="#Отзывы" data-translate="reviews">Отзывы</a></li>
+             <li><a href="#Связаться-с-нами" data-translate="contact_us">Связаться с нами</a></li>
+            </ul>
+        </nav>
+           <input id="toggle1" type="checkbox"/>
+           <label class="hamburger1" for="toggle1">
+            <div class="top"></div>
+            <div class="meat"></div>
+            <div class="bottom"></div>
+           </label>
+        <nav class="menu1">
+            <a class="link1" href="#О-нас" data-translate="about_us">О нас</a>
+            <a class="link1" href="#Направления" data-translate="directions">Направления</a>
+            <a class="link1" href="#Отзывы" data-translate="reviews">Отзывы</a>
+            <a class="link1" href="#Связаться-с-нами" data-translate="contact_us">Связаться с нами</a>
+        </nav>
+
+    </header>
+    <div id="background">
+        <img src="images/beach-1867436.jpg">
+    </div>
+    <div id="transparent-box">
+        <img src="images/logot.png" width="300px" id="logo-on-box">
+        <p data-translate="quality_rest">Для тех, кто ценит качественный отдых.</p>
+    </div>
+    <div id="blue-line"></div>
+
+    <main>
+        <section id="О-нас">
+            <h2 data-translate="about_us">О нас</h2>
+            <div class="about-us">
+                <div class="img-container">
+                    <img src="images/pic1.png" id="about-pic">
+                </div>
+                <div class="about-us-container">
+                    <h3 data-translate="services">Наши Услуги</h3>
+                    <p data-translate="our_services">Мы специализируемся на отелях от уровня <strong>КОМФОРТ</strong> до уровня <strong>ЛЮКС</strong> по всему миру.</p>
+                    <h3 data-translate="online_office_h">Онлайн Офис</h3>
+                    <p data-translate="online_office">Наш офис - это наша страница в <strong>INSTAGRAM</strong>, забронировать путешествие, подписать договор и оплатить можно полностью дистанционно, получив необходимые документы на email.</p>
+                    <p data-translate="task">Задача бюро путешествий SELECT.SUN - найти для Вас идеальный по соотношению цена-качество вариант с учетом Ваших пожеланий.</p>
+                    <h3 data-translate="booking">Как происходит бронирование?</h3>
+                    <p data-translate="booking_process">Для новых клиентов мы сначала оцениваем возможность предоставления подходящих вариантов по вашим параметрам и высылаем первичную подборку. Затем оформляется договор на консультационные услуги. Стоимость консультации вычитается при бронировании из общей стоимости тура.</p>
+                    <ul class="services-list">
+                        <h3 data-translate="what_we_offer">Что Мы Предлагаем</h3>
+                        <li data-translate="tours">Туры</li>
+                        <li data-translate="ground_services">Наземное обслуживание</li>
+                        <li data-translate="flights">Авиабилеты</li>
+                        <li data-translate="transfers">Трансферы</li>
+                        <li data-translate="individual_routes">Индивидуальные маршруты</li>
+                    </ul>
+                </div>
+                
+            </div>
+
+            <div class="view-all">
+                <a href="/pages/about.html" class="section-link">
+                    <i class="fa-solid fa-info-circle"></i>Узнать больше
+                </a>
+            </div>
+        </section>
+
+
+        <section id="Направления">
+            <h2 data-translate="directions">Направления</h2>
+            <div class="carousel">
+                <button class="prev" onclick="prevSlide()">&#10094;</button>
+                <div class="carousel-inner">
+                    <!-- Cloned last item for continuous effect -->
+                    <div class="carousel-item clone">
+                        <div class="image-box">
+                            <img src="images/thailand.png" alt="Thailand">
+                            <p class="description" data-translate="thailand">Таиланд</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-box">
+                            <img src="images/thailand.png" alt="Thailand">
+                            <p class="description" data-translate="thailand">Таиланд</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-box">
+                           <img src="images/turkey.jpg" alt="Turkey"> 
+                            <p class="description" data-translate="turkey">Турция</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-box">
+                            <img src="images/uae.png" alt="UAE">
+                            <p class="description" data-translate="uae">ОАЭ</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-box">
+                            <img src="images/maldives.jpg" alt="Maldives">
+                            <p class="description" data-translate="maldives">Мальдивы</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-box">
+                            <img src="images/zanzibar.png" alt="Zanzibar">
+                            <p class="description" data-translate="zanzibar">Занзибар</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-box">
+                            <img src="images/oman.png" alt="Oman">
+                            <p class="description" data-translate="oman">Оман</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-box">
+                            <img src="images/qatar.png" alt="Qatar">
+                            <p class="description" data-translate="qatar">Катар</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-box">
+                            <img src="images/indonesia.png" alt="Indonesia">
+                            <p class="description" data-translate="indonesia">Индонезия</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-box">
+                            <img src="images/malaysia.png" alt="Malaysia">
+                            <p class="description" data-translate="malaysia">Малайзия</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-box">
+                            <img src="images/sri-lanka.png" alt="Sri Lanka">
+                            <p class="description" data-translate="sri_lanka">Шри-Ланка</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="image-box">
+                            <img src="images/vietnam.png" alt="Vietnam">
+                            <p class="description" data-translate="vietnam">Вьетнам</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="next" onclick="nextSlide()">&#10095;</button>
+            </div>
+
+            <div class="view-all">
+                <a href="/pages/destinations" class="section-link">
+                    <i class="fa-solid fa-globe"></i>Все направления
+                </a>
+            </div>
+        </section>
+
+    
+    <script src="script.js"></script>
+
+    <section id="Отзывы">
+        <h2 style="color: white;" data-translate="customer_reviews">Отзывы наших клиентов</h2>
+        
+        <div class="reviews-container">
+            <div class="review">
+                <p class="review-text" data-translate="review_1">Спасибо вам большое! Вы чудесны, даже бронирование тура подарило позитивные эмоции.</p>
+            </div>
+            <div class="review">
+                <p class="review-text" data-translate="review_2">Отель шикарный, мы в восторге, жалею что раньше здесь не была. Спасибо! Это - любовь с первого взгляда.</p>
+            </div>
+            <div class="review">
+                <p class="review-text" data-translate="review_3">Хотим от всего сердца выразить Вам огромную благодарность за активное участие в решении вопросов и помощи. Вы - супер отзывчивый добрейший человек и большой профессионал своего дела!</p>
+            </div>
+            <div class="review">
+                <p class="review-text" data-translate="review_4">Анастасия, это божественный отель! Спасибо Вам огромное в помощи! Мы с Вами на века.</p>
+            </div>
+            <div class="review">
+                <p class="review-text" data-translate="review_5">Анастасия, здравствуйте, я пишу Вам с большой благодарностью! Первый отдых с детьми-это было волнительно, и самим бронировать тур было страшно и как же я рада, что встретила вас!</p>
+            </div>
+            <div class="review">
+                <p class="review-text" data-translate="review_6">Огромное спасибо Вам за наш отдых! За поддержку и помощь с любым вопросом. Теперь я знаю, с кем буду летать в отпуск!</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="Связаться-с-нами" style=" background-color: #f9f5f0;">
+        <h2 data-translate="contact_us">Связаться с нами</h2>
+        
+        <div class="contact-flex">
+            <div class="form-container">
+                <form id="contact-form" action="https://formspree.io/f/xrbzvrbo" method="POST">
+                    <label for="name" data-translate="name">Имя:</label>
+                    <input type="text" id="name" name="name" required>
+                    
+                    <label for="email" data-translate="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label for="subject" data-translate="subject">Тема:</label>
+                    <input type="text" id="subject" name="subject" required>
+                    
+                    <label for="message" data-translate="message">Сообщение:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                    
+                    <button type="submit" data-translate="submit">Submit</button>
+                </form>
+            </div>
+            
+            <div class="box" id="contact-box">
+                <div id="profile-pic-container">
+                    <img src="images/sulect-sun_profile.png" id="profile-pic">
+                    <div id="contact-info">
+                        <h1 data-translate="contact_person">Анастасия Беленькая</h1>
+                        <p data-translate="contact_title">Автор Онлайн-турагентства</p>
+                        <div id="social-links">
+                            <div>
+                                <a href="https://www.instagram.com/select.sun/" target="_blank">
+                                    <i class="fa-brands fa-instagram fa-2x"></i>
+                                </a>
+                                <a href="https://t.me/selectsuntravel" target="_blank">
+                                    <i class="fa-brands fa-telegram fa-2x"></i>
+                                </a>
+                                <a href="mailto:select.sun@mail.ru" target="_blank">
+                                    <i class="fa-regular fa-envelope fa-2x"></i>
+                                </a>
+                                <a href="https://wa.link/jf3k3f" target="_blank">
+                                    <i class="fa-brands fa-whatsapp fa-2x"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div id="paragraph-contact">
+                    <p data-translate="greeting">Приветствую!</p>
+                    <br>
+                    <p data-translate="introduction">
+                        Меня зовут Анастасия, я автор бюро путешествий SELECT.SUN. Я и моя команда персональных турагентов организуем вам отдых мечты. Отели/авиабилеты/трансферы по всему миру.
+                    </p>
+                    <br>
+                    <h3 data-translate="permanent">C нами остаются навеки, попробуйте и Вы!</h3>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    
+
+</div>
+
+
+</main>
+
+<script src="script.js"></script>
+  
+</body>
+
+
+<footer id="footer">
+    <div class="footer-content">
+        <p data-translate="copyright">&copy; 2024 Select-Sun. Все права защищены.</p>
+        <p data-translate="social_media">Мы в социальных сетях:</p> 
+          <a href="https://www.instagram.com/select.sun/">Instagram</a> | 
+          <a href="https://t.me/selectsuntravel" >Telegram</a> | 
+          <a href="https://wa.link/jf3k3f">WhatsApp</a>
+        </p>
+    </div>
+</footer>
+
+</html>

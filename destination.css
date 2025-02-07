@@ -1,0 +1,543 @@
+/* /styles/destination.css */
+.destination-hero {
+    position: relative;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.destination-nav {
+    background-color: #32748b;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.nav-container a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.nav-container a:hover {
+    background-color: #6acad7;
+}
+
+.destination-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.content-section {
+    margin-bottom: 4rem;
+}
+
+.content-section h2 {
+    color: #32748b;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.overview-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.overview-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.quick-facts {
+    background-color: #f5f5f5;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+.quick-facts ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quick-facts li {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+}
+
+.regions-grid,
+.hotels-grid,
+.experiences-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.region-card,
+.hotel-card,
+.experience-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.region-card:hover,
+.hotel-card:hover,
+.experience-card:hover {
+    transform: translateY(-5px);
+}
+
+.booking-cta {
+    background-color: #32748b;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: white;
+    color: #32748b;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 2rem;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #6acad7;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Add to destination.css */
+
+/* Region Cards */
+.regions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.region-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.region-card img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.region-card h3 {
+    color: #32748b;
+    padding: 1.5rem 1.5rem 0.5rem;
+    font-size: 1.5rem;
+}
+
+.region-card p {
+    padding: 0 1.5rem 1.5rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.region-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(50, 116, 139, 0.2);
+}
+
+/* Hotel Cards */
+.hotels-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
+    padding: 2rem 0;
+}
+
+.hotel-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.hotel-images {
+    position: relative;
+    height: 300px;
+}
+
+.hotel-images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hotel-info {
+    padding: 1.5rem;
+}
+
+.hotel-info h3 {
+    color: #32748b;
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+}
+
+.hotel-rating {
+    color: #ffd700;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.hotel-info p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.book-button {
+    display: inline-block;
+    background-color: #32748b;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.book-button:hover {
+    background-color: #6acad7;
+    transform: translateY(-2px);
+}
+
+/* Experience Cards */
+.experiences-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.experience-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.experience-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.experience-card h3 {
+    color: #32748b;
+    padding: 1.5rem 1.5rem 0.5rem;
+    font-size: 1.3rem;
+}
+
+.experience-card p {
+    padding: 0 1.5rem 1.5rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(50, 116, 139, 0.2);
+}
+
+/* Tips Section */
+.tips-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.tip {
+    background: #f9f9f9;
+    padding: 2rem;
+    border-radius: 15px;
+    border-left: 4px solid #32748b;
+}
+
+.tip h3 {
+    color: #32748b;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+}
+
+.tip p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Add to destination.css */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #32748b;
+}
+
+.logo-link {
+    display: block;
+}
+
+
+
+.back-button {
+    position: absolute;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: white;
+    color: #32748b;
+    transform: translateY(-2px);
+}
+
+.back-arrow {
+    font-size: 1.1em;
+}
+
+/* Update in destination.css */
+.hotels-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem 0;
+}
+
+.hotel-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.hotel-images {
+    position: relative;
+    height: 180px;
+}
+
+.hotel-info {
+    padding: 1rem;
+}
+
+.hotel-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+}
+
+.hotel-features {
+    display: flex;
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+    flex-wrap: wrap;
+}
+
+.overview-image {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.overview-image img {
+    width: 100%;
+    height: 600px; /* Increased from 400px */
+    object-fit: cover;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+}
+
+.overview-image:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(50, 116, 139, 0.2);
+}
+
+.overview-image:hover img {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .overview-image {
+        margin-top: 2rem;
+    }
+    
+    .overview-image img {
+        height: 400px; /* Increased from 300px */
+    }
+}
+
+.hotel-features span {
+    background: #f5f5f5;
+    padding: 0.3rem 0.8rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.book-button {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.destination-nav {
+    position: sticky;
+    top: 0;
+    background-color: #32748b;
+    z-index: 100;
+}
+
+.nav-container a {
+    position: relative;
+    color: white;
+    text-decoration: none;
+    padding: 1rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.nav-container a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+.nav-container a:hover::after,
+.nav-container a.active::after {
+    width: 80%;
+}
+
+.nav-container a:active {
+    transform: scale(0.95);
+}
+
+.experience-note {
+    text-align: center;
+    margin-top: 3rem;
+    padding: 2rem;
+    background: rgba(50, 116, 139, 0.1);
+    border-radius: 15px;
+}
+
+.contact-button {
+    display: inline-block;
+    background-color: #32748b;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #6acad7;
+    transform: translateY(-2px);
+}
+@media (max-width: 768px) {
+    .regions-grid,
+    .hotels-grid,
+    .experiences-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hotel-images {
+        height: 250px;
+    }
+    
+    .tip {
+        padding: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .overview-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .nav-container {
+        flex-wrap: wrap;
+    }
+}

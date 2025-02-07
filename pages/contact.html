@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Связаться с нами | SELECT.SUN Travel</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/7982669c64.js" crossorigin="anonymous"></script>
+    <style>
+        .contact-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+        }
+
+        .contact-info {
+            padding: 2rem;
+        }
+
+        .contact-info h2 {
+            color: #2c3e50;
+            margin-bottom: 2rem;
+            font-family: 'Karla', sans-serif;
+        }
+
+        .contact-method {
+            margin-bottom: 2rem;
+        }
+
+        .contact-method h3 {
+            color: #bba086;
+            margin-bottom: 1rem;
+            font-family: 'Karla', sans-serif;
+        }
+
+        .contact-method p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .contact-method a {
+            color: #bba086;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .contact-method a:hover {
+            color: #2c3e50;
+        }
+
+        .contact-form {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #2c3e50;
+            font-family: 'Karla', sans-serif;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-family: 'Karla', sans-serif;
+        }
+
+        .form-group textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            background: linear-gradient(135deg, #bba086, #d4c3b3);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Karla', sans-serif;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            background: linear-gradient(135deg, #d4c3b3, #bba086);
+        }
+
+        @media (max-width: 768px) {
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        
+
+        <img src="../images/logo2.png" id="logo" alt="Logo">
+        
+        <nav class="navbar" id="navbar">
+            <ul>
+                <li><a href="../index.html#О-нас" data-translate="about_us">О нас</a></li>
+                <li><a href="../index.html#Направления" data-translate="directions">Направления</a></li>
+                <li><a href="../index.html#Отзывы" data-translate="reviews">Отзывы</a></li>
+                <li><a href="../index.html#Связаться-с-нами" data-translate="contact_us">Связаться с нами</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contact-container">
+        <div class="contact-info">
+            <h2>Связаться с нами</h2>
+            
+            <div class="contact-method">
+                <h3>WhatsApp</h3>
+                <p><a href="https://wa.link/jf3k3f" target="_blank">+7 (977) 999-99-99</a></p>
+            </div>
+
+            <div class="contact-method">
+                <h3>Telegram</h3>
+                <p><a href="https://t.me/selectsuntravel" target="_blank">@selectsuntravel</a></p>
+            </div>
+
+            <div class="contact-method">
+                <h3>Instagram</h3>
+                <p><a href="https://www.instagram.com/select.sun/" target="_blank">@select.sun</a></p>
+            </div>
+
+            <div class="contact-method">
+                <h3>Email</h3>
+                <p><a href="mailto:info@select-sun.com">info@select-sun.com</a></p>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <form id="contactForm" action="#" method="POST">
+                <div class="form-group">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Телефон</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Сообщение</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Select-Sun. Все права защищены.</p>
+            <p>Мы в социальных сетях:</p>
+            <a href="https://www.instagram.com/select.sun/">Instagram</a> |
+            <a href="https://t.me/selectsuntravel">Telegram</a> |
+            <a href="https://wa.link/jf3k3f">WhatsApp</a>
+        </div>
+    </footer>
+</body>
+</html>

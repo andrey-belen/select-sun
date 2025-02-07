@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Dream Destinations | Your Travel Agency</title>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/map.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: "Karla", sans-serif;
+            background-color: #f9f5f0;
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(50, 116, 139, 0.8), rgba(50, 116, 139, 0.8)), url('/api/placeholder/1200/400');
+            color: white;
+            padding: 6rem 2rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero-content {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+
+        .section-subtitle {
+            font-size: 1.25rem;
+            color: #6acad7;
+        }
+
+        .destination-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            padding: 3rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .destination-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 2px solid #bba086;
+        }
+
+        .destination-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(50, 116, 139, 0.2);
+        }
+
+        .destination-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .destination-content {
+            padding: 1.5rem;
+        }
+
+        .destination-title {
+            font-size: 1.8rem;
+            margin-bottom: 0.8rem;
+            color: #32748b;
+        }
+
+        .destination-features {
+            display: flex;
+            gap: 0.8rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+
+        .feature-tag {
+            background: #e0f7fa;
+            color: #32748b;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            border: 1px solid #6acad7;
+        }
+
+        .destination-description {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .explore-button {
+            background-color: #32748b;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 20px;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+
+        .explore-button:hover {
+            background-color: #6acad7;
+        }
+
+        .section-intro {
+            text-align: center;
+            padding: 2rem;
+            background: white;
+            margin: 2rem auto;
+            max-width: 800px;
+            border-radius: 20px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .section-intro p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .destination-grid {
+                grid-template-columns: 1fr;
+                padding: 1rem;
+            }
+
+            .hero-section {
+                padding: 3rem 1rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+
+       
+
+        <img src="/images/logo2.png" id="logo" alt="Logo">
+        <!-- Desktop Navbar -->
+       
+          
+        <nav class="navbar" id="navbar">
+            <ul>
+             <li><a href="/#О-нас" data-translate="about_us">О нас</a></li>
+             <li><a href="/#Направления" data-translate="directions">Направления</a></li>
+             <li><a href="/#Отзывы" data-translate="reviews">Отзывы</a></li>
+             <li><a href="/#Связаться-с-нами" data-translate="contact_us">Связаться с нами</a></li>
+            </ul>
+        </nav>
+           <input id="toggle1" type="checkbox"/>
+           <label class="hamburger1" for="toggle1">
+            <div class="top"></div>
+            <div class="meat"></div>
+            <div class="bottom"></div>
+           </label>
+        <nav class="menu1">
+            <a class="link1" href="/#О-нас" data-translate="about_us">О нас</a>
+            <a class="link1" href="/#Направления" data-translate="directions">Направления</a>
+            <a class="link1" href="/#Отзывы" data-translate="reviews">Отзывы</a>
+            <a class="link1" href=/#Связаться-с-нами" data-translate="contact_us">Связаться с нами</a>
+        </nav>
+
+    </header>
+    <div class="hero-section">
+        <div class="hero-content">
+            <h1 class="section-title">Откройте Свое Идеальное Путешествие</h1>
+            <p class="section-subtitle">Исследуйте тщательно отобранные направления по Азии и Ближнему Востоку</p>
+        </div>
+    </div>
+
+    <div class="section-intro">
+        <p>От нетронутых пляжей до древних храмов, от оживленных рынков до безмятежных пустынь – наши тщательно подобранные направления предлагают незабываемые впечатления для каждого путешественника. Позвольте нам стать вашим проводником в следующем приключении.</p>
+    </div>
+
+    <div class="destination-grid">
+        <!-- Thailand -->
+        <div class="destination-card">
+            <img src="/images/thailand.png" alt="Таиланд" class="destination-image">
+            <div class="destination-content">
+                <h2 class="destination-title">Таиланд</h2>
+                <div class="destination-features">
+                    <span class="feature-tag">Тропический рай</span>
+                    <span class="feature-tag">Богатая культура</span>
+                    <span class="feature-tag">Изысканная кухня</span>
+                </div>
+                <p class="destination-description">Откройте для себя Страну Улыбок, где золотые храмы встречаются с прекрасными пляжами. Почувствуйте всемирно известное гостеприимство, насладитесь восхитительной кухней и бесконечными приключениями от шумного Бангкока до спокойных островов.</p>
+                <a href="/pages/destinations/thailand.html" class="explore-button">Исследовать Таиланд</a>
+            </div>
+        </div>
+    
+        <!-- Turkey -->
+        <div class="destination-card">
+            <img src="/images/turkey.jpg" alt="Турция" class="destination-image">
+            <div class="destination-content">
+                <h2 class="destination-title">Турция</h2>
+                <div class="destination-features">
+                    <span class="feature-tag">Исторические места</span>
+                    <span class="feature-tag">Средиземноморское побережье</span>
+                    <span class="feature-tag">Турецкое гостеприимство</span>
+                </div>
+                <p class="destination-description">Там, где Восток встречается с Западом, откройте для себя древние чудеса, потрясающее побережье и колоритные базары. Почувствуйте магию Стамбула, красоту Каппадокии и очарование турецкой культуры.</p>
+                <a href="/pages/destinations/turkey.html" class="explore-button">Исследовать Турцию</a>
+            </div>
+        </div>
+    
+        <!-- UAE -->
+        <div class="destination-card">
+            <img src="/images/uae.png" alt="ОАЭ" class="destination-image">
+            <div class="destination-content">
+                <h2 class="destination-title">Объединенные Арабские Эмираты</h2>
+                <div class="destination-features">
+                    <span class="feature-tag">Роскошь</span>
+                    <span class="feature-tag">Пустынные приключения</span>
+                    <span class="feature-tag">Современные чудеса</span>
+                </div>
+                <p class="destination-description">Испытайте идеальное сочетание традиционной арабской культуры и современной роскоши. От небоскребов Дубая до величественных мечетей Абу-Даби — откройте для себя страну безграничных возможностей.</p>
+                <a href="/pages/destinations/uae.html" class="explore-button">Исследовать ОАЭ</a>
+            </div>
+        </div>
+    
+        <!-- Maldives -->
+        <div class="destination-card">
+            <img src="/images/maldives.jpg" alt="Мальдивы" class="destination-image">
+            <div class="destination-content">
+                <h2 class="destination-title">Мальдивы</h2>
+                <div class="destination-features">
+                    <span class="feature-tag">Виллы над водой</span>
+                    <span class="feature-tag">Морская жизнь</span>
+                    <span class="feature-tag">Абсолютная роскошь</span>
+                </div>
+                <p class="destination-description">Шагните в мир, где лазурные воды встречаются с белоснежными пляжами. Насладитесь роскошью вилл над водой, дайвингом мирового класса и непревзойденным спокойствием в этом райском уголке.</p>
+                <a href="/pages/destinations/maldives.html" class="explore-button">Исследовать Мальдивы</a>
+            </div>
+        </div>
+    
+        <!-- Zanzibar -->
+        <div class="destination-card">
+            <img src="/images/zanzibar.png" alt="Занзибар" class="destination-image">
+            <div class="destination-content">
+                <h2 class="destination-title">Занзибар</h2>
+                <div class="destination-features">
+                    <span class="feature-tag">Нетронутые пляжи</span>
+                    <span class="feature-tag">Острова специй</span>
+                    <span class="feature-tag">Каменный город</span>
+                </div>
+                <p class="destination-description">Исследуйте экзотический остров специй с его нетронутыми пляжами, историческим Каменным городом и богатым культурным наследием. Почувствуйте идеальное сочетание африканского и арабского влияния в этом тропическом раю.</p>
+                <a href="/pages/destinations/zanzibar.html" class="explore-button">Исследовать Занзибар</a>
+            </div>
+        </div>
+    
+        <!-- Oman -->
+        <div class="destination-card">
+            <img src="/images/oman.png" alt="Оман" class="destination-image">
+            <div class="destination-content">
+                <h2 class="destination-title">Оман</h2>
+                <div class="destination-features">
+                    <span class="feature-tag">Древнее наследие</span>
+                    <span class="feature-tag">Горные хребты</span>
+                    <span class="feature-tag">Традиционная культура</span>
+                </div>
+                <p class="destination-description">Откройте для себя подлинную Аравию в драматических пейзажах Омана, от древних фортов до нетронутых вади. Испытайте традиционное оманское гостеприимство и исследуйте нетронутую красоту Аравийского полуострова.</p>
+                <a href="/pages/destinations/oman.html" class="explore-button">Исследовать Оман</a>
+            </div>
+        </div>
+    
+        <!-- Qatar -->
+        <div class="destination-card">
+            <img src="/images/qatar.png" alt="Катар" class="destination-image">
+            <div class="destination-content">
+                <h2 class="destination-title">Катар</h2>
+                <div class="destination-features">
+                    <span class="feature-tag">Современная роскошь</span>
+                    <span class="feature-tag">Сафари в пустыне</span>
+                    <span class="feature-tag">Культурное наследие</span>
+                </div>
+                <p class="destination-description">Испытайте идеальное сочетание современной изысканности и арабских традиций. От футуристического горизонта Дохи до приключений в пустыне, откройте для себя уникальное очарование и гостеприимство Катара.</p>
+                <a href="/pages/destinations/qatar.html" class="explore-button">Исследовать Катар</a>
+            </div>
+        </div>
+    
+        <!-- Seychelles -->
+        <div class="destination-card">
+            <img src="/images/seychelles.png" alt="Сейшелы" class="destination-image">
+            <div class="destination-content">
+                <h2 class="destination-title">Сейшелы</h2>
+                <div class="destination-features">
+                    <span class="feature-tag">Райские пляжи</span>
+                    <span class="feature-tag">Уникальная природа</span>
+                    <span class="feature-tag">Роскошный отдых</span>
+                </div>
+                <p class="destination-description">Откройте для себя настоящий рай на земле с кристально чистыми водами и белоснежными пляжами. Насладитесь уединением на частных островах, познакомьтесь с уникальной флорой и фауной и испытайте непревзойденный уровень роскоши.</p>
+                <a href="/pages/destinations/seychelles.html" class="explore-button">Исследовать Сейшелы</a>
+            </div>
+        </div>
+    
+        <!-- Egypt -->
+        <div class="destination-card">
+            <img src="/images/egypt.png" alt="Египет" class="destination-image">
+            <div class="destination-content">
+                <h2 class="destination-title">Египет</h2>
+                <div class="destination-features">
+                    <span class="feature-tag">Древние пирамиды</span>
+                    <span class="feature-tag">Красное море</span>
+                    <span class="feature-tag">Круизы по Нилу</span>
+                </div>
+                <p class="destination-description">Погрузитесь в историю древнейшей цивилизации, исследуйте величественные пирамиды и храмы. Насладитесь великолепным дайвингом в Красном море и совершите незабываемое путешествие по легендарному Нилу.</p>
+                <a href="/pages/destinations/egypt.html" class="explore-button">Исследовать Египет</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

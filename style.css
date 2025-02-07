@@ -1,0 +1,938 @@
+* {
+    padding: 0;
+    box-sizing: border-box
+}
+
+body {
+    max-width: 100%;
+    height: 100vh;
+    font-family: "Karla",sans-serif
+}
+
+#background img,body,html {
+    width: 100%;
+    height: 100%
+}
+
+*,body,html {
+    margin: 0
+}
+
+#header,footer {
+    background-color: #32748b;
+    color: #fff;
+    text-align: center
+}
+
+#header,html {
+    font-family: "Karla",sans-serif
+}
+
+#header {
+    width: 100%;
+    height: 130px;
+    font-size: 1.5em;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+#languageSwitcher {
+    background-color: #32748b;
+    color: #6db0c8;
+    border-radius: 20px;
+    border: 0;
+    margin-bottom: 10px;
+    position: absolute;
+    right: 20px;
+    top: 10px
+}
+
+footer {
+    padding: 20px
+}
+
+#social-links a,.navbar a,footer a {
+    color: #6acad7;
+    text-decoration: none
+}
+
+footer a:hover {
+    text-decoration: underline
+}
+
+.footer-content p {
+    margin: 10px 0;
+    font-size: 15px
+}
+
+#logo {
+    width: 170px;
+    margin-left: 20px
+}
+
+#navbar,.navbar ul {
+    width: 100%;
+    margin: 0;
+    border-radius: 20px
+}
+
+.navbar ul {
+    list-style-type: none;
+    background-color: #32748b;
+    font-family: "Karla",sans-serif;
+    font-size: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: space-around
+}
+
+.navbar li {
+    flex: 1;
+    text-align: center
+}
+
+.navbar a {
+    color: #fff;
+    padding: 15px;
+    border-radius: 300px;
+    display: block
+}
+
+#contact-form button:hover,.navbar a:hover {
+    background-color: #6acad7
+}
+
+#toggle1,.menu1 {
+    display: none
+}
+
+#toggle1 {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute
+}
+
+#footer,.about-us {
+    display: flex;
+    justify-content: center
+}
+
+#footer {
+    width: 100%;
+    height: 130px;
+    background-color: #32748b;
+    color: #fff;
+    text-align: center;
+    font-family: "Karla",sans-serif;
+    font-size: 1.5em;
+    box-sizing: border-box;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    align-items: center
+}
+
+#background {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0
+}
+
+#background img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1
+}
+
+#transparent-box {
+    transform: translate(-50%,-50%);
+    background: rgba(255,255,255,.5)
+}
+
+#О-нас {
+    padding: 40px 20px;
+    background-color: #f9f5f0;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+#О-нас h2 {
+    font-family: "Arial",sans-serif;
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px
+}
+
+.about-us {
+    align-items: flex-start;
+    gap: 20px;
+    padding-top: 20px;
+    margin-bottom: 0
+}
+
+.img-container {
+    flex: 1
+}
+
+#about-pic {
+    border: solid 5px #bba086;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 700px
+}
+
+.about-us-container {
+    flex: 2;
+    text-align: left
+}
+
+.about-us h3 {
+    color: #333;
+    font-size: 1.5em;
+    margin-bottom: 10px
+}
+
+.about-us p {
+    color: #666;
+    font-size: 1em;
+    margin-bottom: 20px
+}
+
+.services-list {
+    list-style: none;
+    padding: 0;
+    text-align: center
+}
+
+.services-list h3 {
+    color: #000;
+    padding-bottom: 10px
+}
+
+.services-list li {
+    display: inline-block;
+    background-color: #e0f7fa;
+    color: #00796b;
+    border: 2px solid #bba086;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 1.2em
+}
+
+#transparent-box,.carousel {
+    box-shadow: 0 4px 8px rgba(0,0,0,.1)
+}
+
+#transparent-box {
+    font-family: "Karla",sans-serif;
+    position: absolute;
+    top: 350px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    padding: 20px;
+    background-color: rgba(255,255,255,.8);
+    border-radius: 20px;
+    text-align: center;
+    z-index: 5;
+    color: #000
+}
+
+section {
+    padding-top: 0;
+    padding-left: 50px;
+    margin: 50px 0
+}
+
+#blue-line {
+    width: 100%;
+    height: 50px;
+    background-color: #32748b;
+    position: relative;
+    z-index: 1
+}
+
+#Направления,#Отзывы h2 {
+    text-align: center;
+    margin-top: 0
+}
+
+#Направления {
+    
+    background-color: #f9f5f0;
+    margin-bottom: 0
+}
+
+.carousel {
+    position: relative;
+    width: 90%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px auto 0
+}
+
+.carousel-inner {
+    display: flex;
+    transition: transform .8s ease
+}
+
+.carousel-item {
+    flex: 0 0 calc(100%/3);
+    box-sizing: border-box
+}
+
+.image-box {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center
+}
+
+.image-box img {
+    max-width: 100%;
+    border-radius: 20px
+}
+
+.description {
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    background-color: #e0f7fa;
+    color: #00796b;
+    border: 2px solid #bba086;
+    border-radius: 10px
+}
+
+#social-links div,.next,.prev {
+    display: flex;
+    align-items: center
+}
+
+#contact-form button,.next,.prev {
+    color: #fff;
+    border: 0;
+    cursor: pointer
+}
+
+.next,.prev {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,.5);
+    padding: 10px;
+    border-radius: 50%;
+    z-index: 10;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    font-size: 18px
+}
+
+.prev {
+    left: 20px
+}
+
+.next {
+    right: 20px
+}
+
+.next:hover,.prev:hover {
+    background-color: rgba(0,0,0,.8)
+}
+
+#Отзывы {
+    padding: 20px;
+    margin: 0;
+    background-color: #32748b
+}
+
+#Отзывы h2 {
+    margin-bottom: 20px;
+    font-family: Arial,sans-serif;
+    color: #fff
+}
+
+.reviews-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    padding: 0 20px;
+    color: #888
+}
+
+#contact-form,.review {
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,.1)
+}
+
+.review {
+    border: 5px solid #bba086;
+    background-color: #fff;
+    font-family: Arial,sans-serif;
+    color: #555;
+    transition: transform .3s,box-shadow .3s;
+    position: relative;
+    overflow: hidden
+}
+
+.review:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0,0,0,.2)
+}
+
+.review::before {
+    content: "“";
+    font-size: 50px;
+    color: #ccc;
+    position: absolute;
+    top: 10px;
+    left: 10px
+}
+
+.review-text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    padding-left: 30px
+}
+
+#Связаться-с-нами{
+    margin: 0px;
+    padding: 20px;
+}
+
+.contact-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    text-align: center
+}
+
+#contact-form {
+    margin: 10px;
+    height: 640px;
+    width: 100%;
+    background-color: #f9f9f9
+}
+
+#contact-form label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 700
+}
+
+#contact-form input,#contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px
+}
+
+#contact-form button {
+    background-color: #32748b;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px
+}
+
+.form-container {
+    flex: 1
+}
+
+#contact-box {
+   
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    border: 5px solid #bba086;
+    border-radius: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+    flex: 1;
+    margin-right: 20px
+}
+
+#profile-pic-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    text-align: center
+}
+
+#profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px
+}
+
+#contact-info {
+    text-align: center;
+    justify-content: center
+}
+
+#contact-info h1,#contact-info p {
+    margin-bottom: 10px
+}
+
+#paragraph-contact {
+    font-size: large;
+    text-align: left;
+    padding: 10px 20px 0;
+    margin-top: 0;
+    margin-bottom: 0
+}
+
+#social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px
+}
+
+#social-links div {
+    margin-bottom: 0
+}
+
+#social-links i {
+    margin: 10px
+}
+
+#social-links a {
+    color: inherit
+}
+
+#paragraph {
+    text-align: center
+}
+
+#background,#contact-form,#footer,#header,#Направления,#О-нас,#Отзывы,.carousel,.navbar ul,.reviews-container {
+    max-width: 100%
+}
+
+/* Add to style.css */
+.view-btn {
+    background-color: transparent;
+    color: #32748b;
+    border: 2px solid #32748b;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 0.9em;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    margin: 20px 0;
+}
+
+.view-btn:hover {
+    background-color: #32748b;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(50, 116, 139, 0.2);
+}
+
+.preview-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.section-link {
+    color: white;
+    background-color: #32748b;
+    text-decoration: none;
+    font-family: "Karla", sans-serif;
+    font-weight: 600;
+    font-size: 1.1em;
+    padding: 15px 30px;
+    display: inline-block;
+    margin: 15px;
+    border-radius: 30px;
+    border: 2px solid #32748b;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(50, 116, 139, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.section-link:hover {
+    background-color: #6acad7;
+    border-color: #6acad7;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(50, 116, 139, 0.3);
+}
+
+.section-link::after {
+    content: '→';
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.section-link:hover::after {
+    transform: translateX(5px);
+}
+
+.section-link i {
+    margin-right: 10px;
+    font-size: 1.2em;
+    vertical-align: middle;
+}
+
+.view-all {
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 20px;
+}
+
+/* Modify contact section spacing */
+#Связаться-с-нами {
+    padding: 40px 20px 20px; /* Reduced bottom padding */
+}
+
+.contact-flex {
+    margin-bottom: 0; /* Remove extra bottom margin */
+    gap: 30px; /* Consistent spacing between form and contact box */
+}
+
+.form-container, 
+#contact-box {
+    margin-bottom: 0; /* Remove bottom margin */
+    padding-bottom: 20px; /* Add small padding */
+}
+
+#paragraph-contact {
+    margin-bottom: 0; /* Remove extra space after last paragraph */
+}
+
+.form-container form {
+    margin-bottom: 0; /* Remove form bottom margin */
+}
+/* Contact section spacing fixes */
+#Связаться-с-нами {
+    padding: 40px 20px 0; /* Remove bottom padding completely */
+    margin-bottom: 0;
+}
+
+.contact-flex {
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+}
+
+.form-container, 
+#contact-box {
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+#contact-form {
+    height: 540px;
+    margin: 0px;
+}
+.form-container{
+    height: 500px;
+    margin-top: 0px;
+    margin-bottom: 50px;
+}
+
+#contact-box{
+    margin-top: 20px;
+    height: 545px;
+}
+
+
+
+
+@media (max-width:1200px) {
+    .reviews-container {
+        grid-template-columns: repeat(2,1fr)
+    }
+
+    .contact-flex {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-right: 40px
+    }
+
+    .carousel-item {
+        flex: 0 0 calc(100%/2)
+    }
+}
+
+@media (max-width:768px) {
+    #footer,#header {
+        height: auto;
+        padding: 20px
+    }
+
+    #background {
+        width: 200%;
+        overflow: hidden;
+        z-index: 0;
+        margin: 0
+    }
+
+    #logo {
+        margin-left: 10px;
+        width: 100px
+    }
+
+    .contact-flex {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-right: 40px
+    }
+
+    #contact-box,#contact-form {
+        max-width: none
+    }
+
+    #О-нас {
+        padding: 20px 10px
+    }
+
+    .about-us {
+        flex-direction: column
+    }
+
+    #transparent-box {
+        top: 200px;
+        width: 90%
+    }
+
+    .reviews-container {
+        grid-template-columns: 1fr
+    }
+
+    .carousel-item {
+        flex: 0 0 100%
+    }
+
+    .carousel {
+        width: 100%
+    }
+}
+
+@media (max-width:480px) {
+    * {
+        max-width: 480px
+    }
+
+    #background {
+        height: 70vh;
+        overflow: hidden;
+        margin: 0
+    }
+
+    .img-container {
+        display: none
+    }
+
+    #header {
+        height: fit-content;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center
+    }
+
+    #logo {
+        content: url(images/logocircle3-sml.png);
+        width: 200px;
+        padding-top: 10px;
+        margin-top: 20px
+    }
+
+    .hamburger,.hamburger1 {
+        display: flex
+    }
+
+    .hamburger1 {
+        cursor: pointer;
+        flex-direction: column;
+        justify-items: center;
+        z-index: 120;
+        margin: 5px 10px 10px
+    }
+
+    .hamburger1 div {
+        background-image: linear-gradient(to bottom right,#a28a73,#ffe9d4,#a28a73);
+        position: relative;
+        border-radius: 20px;
+        width: 40px;
+        height: 5px;
+        margin-top: 7px;
+        -webkit-transition: all 1s ease-in-out;
+        transition: all .5s ease-in-out
+    }
+
+    #navbar,#toggle1 {
+        display: none
+    }
+
+    #toggle1:checked+.hamburger1 .top {
+        -webkit-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        margin-top: 10px
+    }
+
+    #toggle1:checked+.hamburger1 .meat {
+        -webkit-transform: rotate(45deg);
+        transform: rotate(45deg);
+        margin-top: -5px
+    }
+
+    #toggle1:checked+.hamburger1 .bottom {
+        -webkit-transform: scale(0);
+        transform: scale(0)
+    }
+
+    #toggle1:checked~.menu1 {
+        height: 190px
+    }
+
+    .menu1 {
+        background-color: #32748b;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        width: auto;
+        text-align: center;
+        height: 0;
+        overflow: hidden;
+        -webkit-transition: all 1s ease;
+        transition: all 1s ease
+    }
+
+    .link1,.menu1 a {
+        margin: 0;
+        border-radius: 20px
+    }
+
+    .menu1 a {
+        padding: 5px;
+        text-decoration: none;
+        color: #fff;
+        font-family: "Karla",sans-serif
+    }
+
+    .link1 {
+        width: 100%
+    }
+
+    .link1:hover {
+        background-color: #6acad7;
+        color: #bba086;
+        -webkit-transition: all .3s ease;
+        transition: all .3s ease
+    }
+
+    #logo-on-box {
+        width: 200px
+    }
+
+    .services-list li {
+        font-size: 1em
+    }
+
+    #Отзывы {
+        margin-bottom: 0
+    }
+
+    .contact-flex {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 20px;
+        margin: 0
+    }
+
+    #paragraph-contact {
+        font-size: 15px
+    }
+
+    #Связаться-с-нами {
+        background-color: #fff
+    }
+
+    #social-links {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 15px
+    }
+
+    #social-links i {
+        margin-left: 0
+    }
+
+    #social-links div {
+        gap: 10px
+    }
+
+    #profile-pic {
+        width: 50%;
+        height: 50%
+    }
+
+    #Связаться-с-нами {
+        text-align: center;
+        margin: 0;
+        padding: 20px 0
+    }
+
+    .form-container {
+        max-width: 300px;
+        width: 100%;
+        margin: 10px
+    }
+
+    #contact-box,#profile-pic-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+
+    #contact-box {
+        max-width: 400px;
+        width: 100%;
+        margin: 0
+    }
+
+    #profile-pic-container {
+        margin: 10px
+    }
+
+    #paragraph-contact {
+        padding: 10px;
+        margin: 0
+    }
+
+    .carousel-item {
+        flex: 0 0 100%
+    }
+}

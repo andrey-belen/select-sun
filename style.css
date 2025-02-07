@@ -663,7 +663,32 @@ section {
 }
 
 
+.breadcrumbs {
+    width: 100%;
+    background: #32748b;
+    padding: 10px 0;
+    margin: 0;
+    
+}
 
+.breadcrumbs-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    font-size: 0.85rem;
+    color: #ffffff;
+}
+
+.breadcrumbs-content a {
+    color: #fffbfb;
+    margin-left: 0px;
+    padding-left: 0px;
+    text-decoration: none;
+}
+
+.breadcrumbs-content a:hover {
+    text-decoration: underline;
+}
 
 @media (max-width:1200px) {
     .reviews-container {

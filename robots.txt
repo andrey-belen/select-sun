@@ -1,0 +1,32 @@
+User-agent: *
+Allow: /
+Allow: /destinations/
+Allow: /about.html
+
+Disallow: /admin/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+
+# Crawl-delay for bots
+Crawl-delay: 10
+
+# Sitemap location
+Sitemap: https://select-sun.ru/sitemap.xml
+
+# Specific bot rules
+User-agent: Googlebot
+Allow: /
+
+User-agent: Yandexbot
+Allow: /
+
+User-agent: bingbot
+Allow: /
+
+# Block certain file types
+Disallow: /*.json$
+Disallow: /*.xml$
+Disallow: /*.txt$
+Disallow: /*.yml$
+Disallow: /*.pdf$

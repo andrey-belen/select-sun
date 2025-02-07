@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <!-- Main pages -->
+    <url>
+        <loc>https://select-sun.com/</loc>
+        <lastmod>2024-03-20</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>https://select-sun.com/about.html</loc>
+        <lastmod>2024-03-20</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Destination pages -->
+    <url>
+        <loc>https://select-sun.com/destinations/thailand.html</loc>
+        <lastmod>2024-03-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://select-sun.com/destinations/turkey.html</loc>
+        <lastmod>2024-03-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://select-sun.com/destinations/uae.html</loc>
+        <lastmod>2024-03-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://select-sun.com/destinations/maldives.html</loc>
+        <lastmod>2024-03-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://select-sun.com/destinations/oman.html</loc>
+        <lastmod>2024-03-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://select-sun.com/destinations/qatar.html</loc>
+        <lastmod>2024-03-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://select-sun.com/destinations/egypt.html</loc>
+        <lastmod>2024-03-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://select-sun.com/destinations/zanzibar.html</loc>
+        <lastmod>2024-03-20</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+</urlset>

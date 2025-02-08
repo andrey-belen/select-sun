@@ -8,16 +8,15 @@ function generateBreadcrumbs() {
     const breadcrumbsContent = document.createElement('div');
     breadcrumbsContent.className = 'breadcrumbs-content';
     
-    // Define base paths
+    let basePath = parts.includes('destinations') ? '../../' : '../';
+    
     const items = [
-        { path: './index.html', name: 'Главная' }
+        { path: `${basePath}index.html`, name: 'Главная' }
     ];
     
-    // Add dynamic breadcrumbs based on current path
     if (parts.includes('destinations')) {
-        items.push({ path: './pages/destinations/index.html', name: 'Направления' });
+        items.push({ path: './index.html', name: 'Направления' });
         if (parts.length > 2) {
-            const currentPage = parts[parts.length - 1].replace('.html', '');
             items.push({ path: '', name: document.title.split('|')[0].trim() });
         }
     } else if (parts.includes('about')) {

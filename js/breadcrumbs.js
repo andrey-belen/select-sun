@@ -1,6 +1,9 @@
 function generateBreadcrumbs() {
     const path = window.location.pathname;
-    const parts = path.split('/').filter(part => part);
+    const repoName = 'select-sun';
+    const repoIndex = path.indexOf(repoName);
+    const relativePath = repoIndex !== -1 ? path.slice(repoIndex + repoName.length) : path;
+    const parts = relativePath.split('/').filter(part => part);
     
     const breadcrumbsContainer = document.createElement('nav');
     breadcrumbsContainer.className = 'breadcrumbs';
@@ -8,21 +11,24 @@ function generateBreadcrumbs() {
     const breadcrumbsContent = document.createElement('div');
     breadcrumbsContent.className = 'breadcrumbs-content';
     
-    let basePath = parts.includes('destinations') ? '../../' : '../';
-    
     const items = [
-        { path: `${basePath}index.html`, name: 'Главная' }
+        { path: '/select-sun/', name: 'Главная' }
     ];
     
-    if (parts.includes('destinations')) {
-        items.push({ path: './index.html', name: 'Направления' });
-        if (parts.length > 2) {
-            items.push({ path: '', name: document.title.split('|')[0].trim() });
-        }
-    } else if (parts.includes('about')) {
-        items.push({ path: '', name: 'О нас' });
-    } else if (parts.includes('contact')) {
-        items.push({ path: '', name: 'Связаться с нами' });
+    switch(parts[0]) {
+        case 'pages':
+            if (parts[1] === 'destinations') {
+                items.push({ path: '/select-sun/pages/destinations/', name: 'Направления' });
+                if (parts[2]) {
+                    const destination = parts[2].replace('.html', '');
+                    items.push({ path: '', name: document.title.split('|')[0].trim() });
+                }
+            } else if (parts[1] === 'about.html') {
+                items.push({ path: '', name: 'О нас' });
+            } else if (parts[1] === 'contact.html') {
+                items.push({ path: '', name: 'Связаться с нами' });
+            }
+            break;
     }
     
     breadcrumbsContent.innerHTML = items

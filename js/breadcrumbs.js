@@ -8,17 +8,22 @@ function generateBreadcrumbs() {
     const breadcrumbsContent = document.createElement('div');
     breadcrumbsContent.className = 'breadcrumbs-content';
     
-    // Rest of your existing breadcrumbs logic
+    // Define base paths
     const items = [
-        { path: '/', name: 'Главная' }
+        { path: './index.html', name: 'Главная' }
     ];
     
     // Add dynamic breadcrumbs based on current path
     if (parts.includes('destinations')) {
-        items.push({ path: '/pages/destinations', name: 'Направления' });
+        items.push({ path: './pages/destinations/index.html', name: 'Направления' });
         if (parts.length > 2) {
+            const currentPage = parts[parts.length - 1].replace('.html', '');
             items.push({ path: '', name: document.title.split('|')[0].trim() });
         }
+    } else if (parts.includes('about')) {
+        items.push({ path: '', name: 'О нас' });
+    } else if (parts.includes('contact')) {
+        items.push({ path: '', name: 'Связаться с нами' });
     }
     
     breadcrumbsContent.innerHTML = items
